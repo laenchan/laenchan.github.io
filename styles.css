@@ -15,6 +15,7 @@ header {
   padding: 30px;
   font-size: 35px;
   font-weight: 600;
+  list-style-type: none;
 }
 
 section {
@@ -35,6 +36,18 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 article {

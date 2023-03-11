@@ -1,8 +1,16 @@
 @import url(//fonts.googleapis.com/css?family=Jost:300;400;600);
 
-body {
+h1 {
     font-family: 'Jost', sans-serif;
     color: black;
+}
+
+p {
+    font-family: 'Jost', sans-serif;
+    color: black;
+}
+
+body {
     margin: 0;
     background: pink;
     text-align: center;

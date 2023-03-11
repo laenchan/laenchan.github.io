@@ -1,12 +1,12 @@
 <html>
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
 <style>
 body {
     font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
     margin: 0;
     background: pink;
     text-align: center;

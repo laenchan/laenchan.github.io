@@ -32,11 +32,11 @@ nav {
   padding: 20px;
   font-size: 20px;
   line-height: 1.8;
+  list-style-type: none;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
 }
 
 a:link {

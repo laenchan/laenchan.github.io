@@ -51,12 +51,12 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: blue;
+  color: #4d8061;
 }
 
 a:active {
   text-decoration: none;
-  color: blue;
+  color: #4d8061;
 }
 
 article {

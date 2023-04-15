@@ -17,7 +17,7 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
     
 </script>
 </head>   
-<style>	
+<style>
 * {
   box-sizing: border-box;
 }
@@ -25,6 +25,12 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
 img {
   border-radius: 0%;
 }
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
 
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -41,11 +47,11 @@ img {
   -ms-flex: 15%; /* IE10 */
   flex: 15%;
   max-width: 15%;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 15px;
   vertical-align: middle;
   width: 100%;
 }
@@ -85,6 +91,7 @@ img {
   }
 }
 
+
 @media screen and (max-width: 350px) {
   .column {
     -ms-flex: 100%;
@@ -98,12 +105,8 @@ img {
   }
 }
 </style>
+	   <div id="header"></div>
 <body>
-    <div id="header"></div>
-    
-<div>
-   <p></p>
-	</div>
 	
 <!-- Photo Grid -->
 <div class="row"> 

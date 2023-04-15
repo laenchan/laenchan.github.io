@@ -18,6 +18,18 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
 </script>
 </head>   
 <style>
+#header {
+padding-bottom: 0px;	
+}
+	
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 0%;
+}
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -26,7 +38,6 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
   padding: 0 4px;
   justify-content: center;
   padding-top: 100px;
-  box-sizing: border-box;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -34,12 +45,11 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
   -ms-flex: 15%; /* IE10 */
   flex: 15%;
   max-width: 15%;
-  padding: 0 10px;
-  box-sizing: border-box;
+  padding: 0 4px;
 }
 
 .column img {
-  margin-top: 15px;
+  margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
@@ -79,7 +89,6 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
   }
 }
 
-
 @media screen and (max-width: 350px) {
   .column {
     -ms-flex: 100%;
@@ -93,9 +102,10 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
   }
 }
 </style>
-	   <div id="header"></div>
 <body>
-	
+    <div id="header"></div>
+   
+
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">

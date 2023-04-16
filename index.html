@@ -14,24 +14,29 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
     $(function() {
         $('#header').load("header.html");
     });
-    
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+
 </head>
-    
+<style>
+
+canvas {
+  position: fixed;
+  left: 400px;
+  top: 400px;
+  z-index: -1;
+}
+
+</style>
 <body>
     <div id="header"></div>
     
-<section>
-  
-  <article>
-    <p>This is the home page. 
-    </p>
-   </article>
-</section>
+ <div>
+    <p>This is the home page.</p>
+    </div>
 
-<footer>
-  
-</footer>
-      
+<iframe src="peary3d.js" style="height: 500px; width: 500px;" title="3DPear"></iframe> 
+    
 </body>
 </html>

@@ -1,12 +1,11 @@
 let peary;
 
 function preload() {
-  peary = loadModel('/docs/assets/peary3d.obj');
+  peary = loadModel('/docs/assets/peary3dd.obj');
 }
 function setup() {
   createCanvas(500, 500, WEBGL);
   pixelDensity(0.3);
-  normalMaterial();
 }
 function draw() {
   background(250, 245, 235);

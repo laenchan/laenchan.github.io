@@ -10,6 +10,7 @@ function setup() {
 function draw() {
   background(250, 245, 235);
   orbitControl(5,5,0);
+  scale(20);
   rotateY(2.5);
   model(peary);
 }

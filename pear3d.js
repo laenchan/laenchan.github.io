@@ -1,7 +1,7 @@
 let peary;
 
 function preload() {
-  peary = loadModel('/docs/assets/peary3dd.obj');
+  peary = loadModel('/docs/assets/peary3d.obj');
 }
 function setup() {
   createCanvas(500, 500, WEBGL);
@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(250, 245, 235);
   orbitControl(5,5,0);
-  scale(20);
+  scale(30);
   rotateY(2.5);
   model(peary);
 }

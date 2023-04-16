@@ -8,7 +8,7 @@ function setup() {
   pixelDensity(0.3);
 }
 function draw() {
-  background(250, 245, 235);
+  background(255, 245, 235);
   orbitControl(5,5,0);
   rotateY(2.5);
   model(peary);

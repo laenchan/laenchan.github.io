@@ -16,22 +16,168 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
     });
     
 </script>
-</head>
+</head>   
+<style>
+	
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 0%;
+}
+.desc {
+ padding-top: 5px;
+}
+
+.words {
+  color: rgba(255, 255, 255, 0);
+}
+	
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
+  max-width: 15%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    -ms-flex: 20%;
+    flex: 20%;
+    max-width: 20%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;	  
+  padding-top: 30px;
+}	
+	
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    }
     
+  .row {
+    padding-left:100px;
+    padding-right:100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+.row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  padding-top: 10px;
+}	
+	
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+    
+  .row {
+    padding-left:100px;
+    padding-right:100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center; 
+  padding-top: 0px;
+}	
+	
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+    
+  .row {
+    padding-left:40px;
+    padding-right:40px;
+  }
+}
+</style>
 <body>
     <div id="header"></div>
     
-<section>
-  
-  <article>
-    <p>This is the videos page.
-    </p>
-   </article>
-</section>
+<div class="words">
+    <p>______</p>
+	</div>
 
-<footer>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    
+    <img src="/docs/assets/strawb.png" style="width:100%">
+    <div class="desc">Strawberry Time</div>
+    
+    <img src="/docs/assets/pegasus.png" style="width:100%">
+    <div class="desc">Through the Clouds</div>
+    
+    <img src="/docs/assets/grape.png" style="width:100%">
+    <div class="desc">Snack Time</div>
+    
+  </div>
+  <div class="column">
   
-</footer>
+    
+    <img src="/docs/assets/alien.png" style="width:100%">
+    <div class="desc">Breaking News</div>
+    
+    <img src="/docs/assets/ikea.png" style="width:100%">
+    <div class="desc">Ikea: Is It Real?</div>
+    
+  </div>  
+  <div class="column">
+    
+    <img src="/docs/assets/car.png" style="width:100%">
+    <div class="desc">Download a Car</div>
+	  
+    <img src="/docs/assets/pie.png" style="width:100%">
+	<div class="desc">Shrimp Pie</div>
+      
+  </div>
+
+</div>
       
 </body>
 </html>

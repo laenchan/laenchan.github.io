@@ -14,15 +14,157 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
     $(function() {
         $('#header').load("header.html");
     });
-    
 </script>
-</head>
-    
-<body>
-    <div id="header"></div>
-    
-    <p>This is the videoworks page.
-    </p>
+<style>
+* {box-sizing: border-box}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+hr.line {
+  border: 1px dashed #4d8061;
+  margin: 50px;
+  margin-inline: 20px;
+}
+
+.text {
+  padding-left: 40px;
+  width: 30%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.info {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column;
+}
+
+.text {
+  padding-left: 0px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+hr.line {
+  border: 1px dashed #4d8061;
+  margin: 50px;
+  margin-inline: 0px;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+}
+  </style>
+  </head>
+ <body>
+ <div id="header"></div>
+     
+ <hr id="st" class="line">
  
+     <div class="container">
+      <div class="image">
+        <video width="544" height="306" controls>
+        <source src="/docs/assets/snack time.mp4" type="video/mp4"></video>
+      </div>
+      <div class="text">
+        <p class="title">Snack Time</p>
+        <p class="subtitle">2022, stop motion</p>
+        <p class="info">A bear's attempt at eating grapes.</p>
+      </div>
+    </div>
+ 
+ <hr id="pd" class="line">
+ 
+     <div class="container">
+      <div class="image">
+       <video width="544" height="306" controls muted>
+       <source src="/docs/assets/pool day.mp4" type="video/mp4"></video>
+      </div>
+      <div class="text">
+        <p class="title">Pool Day</p>
+        <p class="subtitle">2022, hand drawn animation</p>
+        <p class="info">A day at the pool with an onion with arms and legs.</p>
+      </div>
+    </div>
+     
+ <hr id="rs" class="line">
+ 
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/rotation.gif">
+      </div>
+      <div class="text">
+        <p class="title">Rotation Station</p>
+        <p class="subtitle">2022, hand drawn animation</p>
+        <p class="info">A spinning cake.</p>
+      </div>
+    </div>
+     
+ <hr id="ww" class="line">
+  
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/worm walk.gif" width="100%">
+      </div>
+      <div class="text">
+        <p class="title">Worm Walk</p>
+        <p class="subtitle">2022, hand drawn animation</p>
+        <p class="info">How a worm would walk (if it had legs).</p>
+      </div>
+    </div>
+     
+ <hr id="ow" class="line">
+  
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/onion walk.gif" width="100%">
+      </div>
+      <div class="text">
+        <p class="title">Onion Walk</p>
+        <p class="subtitle">2022, hand drawn animation</p>
+        <p class="info">Onions can walk too.</p>
+      </div>
+    </div>
+ <hr  class="line">
 </body>
 </html>

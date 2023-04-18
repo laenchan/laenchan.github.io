@@ -17,59 +17,11 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
 </script>
 <style>
 * {box-sizing: border-box}
-.mySlides {display: none}
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-  
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
-}
- 
 .container {
   display: flex;
   align-items: center;
@@ -78,6 +30,14 @@ html {
 
 img {
   max-width: 100%;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-top: 10px;
 }
 
 hr.line {
@@ -110,7 +70,7 @@ hr.line {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+   flex-direction: column;
 }
 
 .text {
@@ -125,15 +85,95 @@ hr.line {
   margin-inline: 0px;
 }
 
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
 }
   </style>
   </head>
-
+ <body>
+ 
+ <hr id="st" class="line">
+ 
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="text">
+        <p class="title">Snack Time</p>
+        <p class="subtitle">date</p>
+        <p class="info">description</p>
+      </div>
+    </div>
+   
+    <div class="container">
+      <div class="image2">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="image2">
+        <img src="/docs/assets/peary.png">
+      </div>
+     <div class="image2">
+        <img src="/docs/assets/peary.png">
+      </div>
+    </div>
+   
+ <hr id="pd" class="line">
+ 
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="text">
+        <p class="title">Pool Day</p>
+        <p class="subtitle">date</p>
+        <p class="info">description</p>
+      </div>
+    </div>
+     
+ <hr id="rs" class="line">
+ 
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="text">
+        <p class="title">Rotation Station</p>
+        <p class="subtitle">date</p>
+        <p class="info">description</p>
+      </div>
+    </div>
+     
+ <hr id="ww" class="line">
   
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="text">
+        <p class="title">Worm Walk</p>
+        <p class="subtitle">date</p>
+        <p class="info">description</p>
+      </div>
+    </div>
+     
+ <hr id="cw" class="line">
   
-    
-<body>
-    <div id="header"></div>
-    
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/peary.png">
+      </div>
+      <div class="text">
+        <p class="title">Carrot Walk</p>
+        <p class="subtitle">date</p>
+        <p class="info">description</p>
+      </div>
+    </div>
+ <hr  class="line">
 </body>
 </html>

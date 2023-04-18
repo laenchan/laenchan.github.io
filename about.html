@@ -14,25 +14,72 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
     $(function() {
         $('#header').load("header.html");
     });
-    
 </script>
-</head>
-    
-<body>
-    <div id="header"></div>
-    
-<section>
-  
-  <article>
-    <p>About me:
-      ?
-    </p>
-   </article>
-</section>
+<style>
+* {box-sizing: border-box}
 
-<footer>
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text {
+  padding-left: 40px;
+  width: 30%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.info {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column;
+}
+
+.text {
+  padding-left: 0px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+  </style>
+  </head>
+ <body>
+ <div id="header"></div>
   
-</footer>
-      
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/about.png" width="100%">
+      </div>
+      <div class="text">
+        <p class="title">About</p>
+        <p class="subtitle">Hi I'm Laen.</p>
+        <p class="subtitle">I like drawing and making fun videos. Recently, I've been making games and simple 3d models.</p>
+        <p class="subtitle">See you around ˙ᵕ˙</p>
+      </div>
+    </div>
 </body>
 </html>

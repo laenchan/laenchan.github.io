@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laen Chan</title>
+    <link rel="icon" type="image/x-icon" href="/docs/assets/peary30.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script
+src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+</script>  
+<script> 
+    $(function() {
+        $('#header').load("header.html");
+    });
+</script>
+<style>
+* {box-sizing: border-box}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+hr.line {
+  border: 1px dashed #4d8061;
+  margin: 50px;
+  margin-inline: 20px;
+}
+
+.text {
+  padding-left: 40px;
+  width: 30%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.info {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   flex-direction: column;
+}
+
+.text {
+  padding-left: 0px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+hr.line {
+  border: 1px dashed #4d8061;
+  margin: 50px;
+  margin-inline: 0px;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+}
+  </style>
+  </head>
+ <body>
+ <div id="header"></div>
+      
+ <hr id="p" class="line">
+ 
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/rotation.gif">
+      </div>
+      <div class="text">
+        <p class="title">Pearstronaut</p>
+        <p class="subtitle">2023</p>
+        <p class="info">In progress!</p>
+      </div>
+    </div>
+     
+ <hr id="se" class="line">
+  
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/worm walk.gif" width="100%">
+      </div>
+      <div class="text">
+        <p class="title">Shrimp Escape</p>
+        <p class="subtitle">2023, side-scroller minigame</p>
+        <p class="info">Help a fellow shrimp escape from a scary fish.</p>
+      </div>
+    </div>
+     
+ <hr id="cj" class="line">
+  
+     <div class="container">
+      <div class="image">
+        <img src="/docs/assets/onion walk.gif" width="100%">
+      </div>
+      <div class="text">
+        <p class="title">Carrot Jump</p>
+        <p class="subtitle">2023, side-scroller minigame</p>
+        <p class="info">Just a regular day of a carrot.</p>
+      </div>
+    </div>
+ <hr  class="line">
+</body>
+</html>

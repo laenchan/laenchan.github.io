@@ -65,9 +65,15 @@ hr.line {
   font-weight: 400;
 }
     
-a.gamelink:link {
+a.gamelink {
   color: #4d8061;
   text-decoration: 1;
+  cursor: ne-resize;
+  font-style: italic;
+}
+
+a.gamelink:hover {
+  color: rgb(222, 158, 29);
 }
 
 @media screen and (max-width: 500px) {
@@ -103,21 +109,49 @@ hr.line {
   </head>
  <body>
  <div id="header"></div>
-      
- <hr id="p" class="line">
+
+ <hr id="diner" class="line">
+ 
+ <div class="container">
+  <div class="image">
+    <img src="/docs/assets/diner.png">
+  </div>
+  <div class="text">
+    <p class="title">Diner</p>
+    <p class="subtitle">2023, 3D minigame</p>
+    <p class="info">Serve food during the midnight shift to a horde of hungry customers.</p>
+    <a class="gamelink" href="https://lchan.itch.io/diner" target="_blank">Play the game here!</a>
+  </div>
+</div>
+
+ <hr id="chatz" class="line">
  
      <div class="container">
       <div class="image">
-        <img src="/docs/assets/pearstronaut.png">
+        <img src="/docs/assets/chatz.png">
       </div>
       <div class="text">
-        <p class="title">Pearstronaut</p>
-        <p class="subtitle">2023</p>
-        <p class="info">Play as a pear navigating different fruit and vegetable themed planets!</p>
-        <a class="gamelink" href="https://lchan.itch.io/pearstronaut" target="_blank" style="color: #4d8061; text-decoration: 1;">Play the game here!</a>
+        <p class="title">Chatz</p>
+        <p class="subtitle">2023, text-based game</p>
+        <p class="info">A game where you have to try and contact someone before your phone battery runs out.</p>
+        <a class="gamelink" href="https://lchan.itch.io/chatz" target="_blank">Play the game here!</a>
       </div>
     </div>
-     
+    
+<hr id="p" class="line">
+ 
+    <div class="container">
+     <div class="image">
+       <img src="/docs/assets/pearstronaut.png">
+     </div>
+     <div class="text">
+       <p class="title">Pearstronaut</p>
+       <p class="subtitle">2023, 2D pixel adventure</p>
+       <p class="info">Play as a pear navigating different fruit and vegetable themed planets!</p>
+       <a class="gamelink" href="https://lchan.itch.io/pearstronaut" target="_blank">Play the game here!</a>
+     </div>
+   </div>
+
  <hr id="se" class="line">
   
      <div class="container">
@@ -128,7 +162,7 @@ hr.line {
         <p class="title">Shrimp Escape</p>
         <p class="subtitle">2023, side-scroller minigame</p>
         <p class="info">Help a fellow shrimp escape from a scary fish.</p>
-        <a class="gamelink" href="https://lchan.itch.io/shrimp-escape" target="_blank" style="color: #4d8061; text-decoration: 1;">Play the game here!</a>
+        <a class="gamelink" href="https://lchan.itch.io/shrimp-escape" target="_blank">Play the game here!</a>
       </div>
     </div>
      
@@ -142,7 +176,7 @@ hr.line {
         <p class="title">Carrot Jump</p>
         <p class="subtitle">2023, side-scroller minigame</p>
         <p class="info">Just a regular day of a carrot.</p>
-        <a class="gamelink" href="https://lchan.itch.io/carrot" target="_blank" style="color: #4d8061; text-decoration: 1;">Play the game here!</a>
+        <a class="gamelink" href="https://lchan.itch.io/carrot" target="_blank">Play the game here!</a>
       </div>
     </div>
  <hr  class="line">

@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+ 
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+}
+
+canvas {
+      position: static;
+      z-index: -1;
+    }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+  width: 100%;
+  }
+}
+
+#z {
+  background-color: #1214ed;
+  opacity: 1;
+}
+
+#y {
+  background-color:#e8437a;
+  opacity: 1;
+}
+
+#x {
+  background-color: #88f953;
+  opacity: 1;
+}

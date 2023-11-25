@@ -65,12 +65,23 @@ hr.line {
   font-weight: 400;
 }
 
+a.weblink {
+  color: #4d8061;
+  text-decoration: 1;
+  cursor: ne-resize;
+  font-style: italic;
+}
+
+a.weblink:hover {
+  color: rgb(222, 158, 29);
+}
+
 @media screen and (max-width: 500px) {
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-   flex-direction: column;
+  flex-direction: column;
 }
 
 .text {
@@ -98,7 +109,35 @@ hr.line {
   </head>
  <body>
  <div id="header"></div>
-     
+
+ <hr id="tubes" class="line">
+ 
+ <div class="container">
+  <div class="image">
+    <img src="/docs/assets/tubes.png" width="100%">
+  </div>
+  <div class="text">
+    <p class="title">Tubes</p>
+    <p class="subtitle">2023, website</p>
+    <p class="info">A depiction of undersea internet cables. With fish!</p>
+    <a class="weblink" href="/docs/tubes/index.html" target="_blank">Link to the website!</a>
+  </div>
+</div>
+
+<hr id="drinkwater" class="line">
+ 
+ <div class="container">
+  <div class="image">
+    <img src="/docs/assets/drinkwater.png" width="100%">
+  </div>
+  <div class="text">
+    <p class="title">Drink Water</p>
+    <p class="subtitle">2023, website</p>
+    <p class="info">Did you drink water today?</p>
+    <a class="weblink" href="https://editor.p5js.org/lchan3/full/pfHXdTTpM" target="_blank">Link to the website!</a>
+  </div>
+</div>
+
  <hr id="sbt" class="line">
  
      <div class="container">
@@ -165,13 +204,13 @@ hr.line {
       </div>
     </div>
      
- <hr id="sp" class="line">
+ <hr class="line">
   
      <div class="container">
       <div class="image">
         <img src="/docs/assets/shrimp pie.gif" width="100%">
       </div>
-      <div class="text">
+      <div id="sp" class="text">
         <p class="title">Shrimp Pie</p>
         <p class="subtitle">2023, gif</p>
         <p class="info">A shrimp walks into a pie.</p>

@@ -1,11 +1,11 @@
-@import url(//fonts.googleapis.com/css?family=Jost:300;400;600);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    font-family: "Jost", sans-serif;
+    font-family: 'Space Mono', monospace;
     color: black;
     font-weight: 400;
     background-color: #faf5eb;

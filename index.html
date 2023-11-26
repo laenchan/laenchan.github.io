@@ -7,9 +7,8 @@
     <title>Laen Chan</title>
     <link rel="icon" type="image/x-icon" href="/docs/assets/peary30.ico">
     <link rel="stylesheet" href="styles.css">
-    <script
-src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
-</script>  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+    </script>  
 <script> 
     $(function() {
         $('#header').load("header.html");
@@ -19,56 +18,199 @@ src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZN
 
 </head>
 <style>
-    #header {
-        margin-bottom: 100px;
-    }
-    
-    canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    display: block;
-    z-index: -1;
+ * {
+  box-sizing: border-box;
 }
 
+img {
+  border-radius: 0%;
+  
+}
+.desc {
+ padding-top: 5px;
+ text-align: center;
+}
+
+.words {
+  color: black;
+  font-style: italic;
+  text-align: center;
+}
+	
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
+  max-width: 15%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    -ms-flex: 20%;
+    flex: 20%;
+    max-width: 20%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;	  
+  padding-top: 30px;
+}	
+	
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    }
+    
+  .row {
+    padding-left:100px;
+    padding-right:100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+.row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  padding-top: 10px;
+}	
+	
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+    
+  .row {
+    padding-left:100px;
+    padding-right:100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .row {
+display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center; 
+  padding-top: 0px;
+}	
+	
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+    
+  .row {
+    padding-left:40px;
+    padding-right:40px;
+  }
+}
 </style>
 <body>
     <div id="header"></div>
     
+<div class="words">
+  <p>3D artist • game developer • illustrator </p>
+</div>
+   
+<div class="row"> 
+    <div class="column">
+        
+      <a href="/3dworks#coffee"><img src="/docs/assets/coffeegirl.png" style="width:100%"></a>
+      <div class="desc"><a href="/3dworks#coffee">Coffee Girl</a></div>
+        
+      <a href="/3dworks#fishcat"><img src="/docs/assets/dollopicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/3dworks#fishcat">Dollop</a></div>
 
+      <a href="/gameworks#chatz"><img src="/docs/assets/chatzicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/gameworks#chatz">Chatz</a></div>
 
-    
-    
-<div class="canvy">
- <script>
-let peary;
-let UV;
+      <a href="/gameworks#se"><img src="/docs/assets/shrimprun.png" style="width:100%"></a>
+      <div class="desc"><a href="/gameworks#se">Shrimp Escape</a></div>
 
-function preload() {
-  peary = loadModel('/docs/assets/peary333d.obj', true);
-  UV = loadImage('/docs/assets/UVPEAR.png');
-}
-function setup() {
-  createCanvas(320, 370, WEBGL); 
-  pixelDensity(0.4);
-}
-function draw() {
-  stroke(0);
-  strokeWeight(0);
-  background(250, 245, 235);
-  orbitControl(5,5,0);
-  scale(1.5);
-  rotateY(frameCount * 0.015);
- 
-  rotateX(3.1);
-  rotateY(6);
-  texture(UV);
-  model(peary);
-}
-</script> 
+      <a href="/otherworks#bn"><img src="/docs/assets/alien.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#bn">Breaking News</a></div>
+  
+      <a href="/otherworks#ike"><img src="/docs/assets/ikea.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#ike">Interior Design is My Passion</a></div>
+      
     </div>
+    <div class="column">
+    
+      <a href="/gameworks#p"><img src="/docs/assets/carrotland.png" style="width:100%"></a>
+      <div class="desc"><a href="/gameworks#p">Pearstronaut</a></div>
+
+      <a href="/3dworks#dinermodel"><img src="/docs/assets/dinerfoodicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/3dworks#dinermodel">Diner 3D</a></div>
+
+      <a href="/otherworks#tubes"><img src="/docs/assets/tubesicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#tubes">Tubes</a></div>
+
+      <a href="/gameworks#cj"><img src="/docs/assets/carrotrun.png" style="width:100%"></a>
+      <div class="desc"><a href="/gameworks#cj">Carrot Jump</a></div>
+
+      <a href="/otherworks#dac"><img src="/docs/assets/car.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#dac">Download a Car</a></div>
+
+      <a href="/otherworks#ttc"><img src="/docs/assets/pegasus.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#ttc">Through the Clouds</a></div>
+      
+    </div>  
+    <div class="column">
+        
+      <a href="/3dworks#christmas"><img src="/docs/assets/crimisicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/3dworks#christmas">Christmas</a></div>  
+
+      <a href="/gameworks#diner"><img src="/docs/assets/dinericon.png" style="width:100%"></a>
+      <div class="desc"><a href="/gameworks#diner">Diner</a></div>
+
+      <a href="/otherworks#drinkwater"><img src="/docs/assets/drinkicon.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#drinkwater">Drink Water</a></div>
+
+      <a href="/otherworks#sbt"><img src="/docs/assets/strawb.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#sbt">Strawberry Time</a></div>
+
+      <a href="/otherworks#sp"><img src="/docs/assets/pie.png" style="width:100%"></a>
+      <div class="desc"><a href="/otherworks#sp">Shrimp Pie</a></div>
+
+      <a href="https://saic-ats.github.io/ATSPracticesSpring2022/Laen/" target="_blank"><img src="/docs/assets/chickenchat.png" style="width:100%"></a>
+      <div class="desc"><a href="https://saic-ats.github.io/ATSPracticesSpring2022/Laen/" target="_blank">Chicken Chat</a></div>  
+      
+    </div>
+</div>
     
 </body>
 </html>

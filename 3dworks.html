@@ -65,7 +65,23 @@ hr.line {
   font-weight: 400;
 }
 
-@media screen and (max-width: 500px) {
+model-viewer {
+  width: 544px;
+  height: 306px;
+}
+
+a.gamelink {
+  color: #4d8061;
+  text-decoration: 1;
+  cursor: ne-resize;
+  font-style: italic;
+}
+
+a.gamelink:hover {
+  color: rgb(222, 158, 29);
+}
+
+@media screen and (max-width: 700px) {
 .container {
   display: flex;
   align-items: center;
@@ -98,73 +114,115 @@ hr.line {
   </head>
  <body>
  <div id="header"></div>
-     
- <hr id="st" class="line">
+
+ <p style="text-align: center; font-style: italic;" class="subtitle">
+    Feel free to move the 3D models around!
+</p>
+ 
+ <hr class="line">
  
      <div class="container">
-      <div class="image">
-        <video width="544" height="306" controls>
-        <source src="/docs/assets/snack time.mp4" type="video/mp4"></video>
+      <div id="coffee" class="image">
+        <model-viewer style="background-color: #4d8061;" src="/docs/3dmodels/coffeegirl.glb" ar ar-modes="webxr scene-viewer quick-look" interaction-prompt="none" camera-controls shadow-intensity="1.39" autoplay auto-rotate min-camera-orbit="auto auto 13.86m" min-field-of-view="16.53deg" exposure="0.82" shadow-softness="0.31" tone-mapping="commerce">
+          <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+          </div>
+        </model-viewer>  
+        <script src="/docs/3dmodels/coffeegirlscript.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
       </div>
       <div class="text">
-        <p class="title">Snack Time</p>
-        <p class="subtitle">2022, stop motion</p>
-        <p class="info">A bear's attempt at eating grapes.</p>
+        <p class="title">Coffee Girl</p>
+        <p class="subtitle">2023</p>
+        <p class="info">A small girl, on a big cup of coffee.</p>
       </div>
     </div>
  
- <hr id="pd" class="line">
+ <hr class="line">
  
      <div class="container">
-      <div class="image">
-       <video width="544" height="306" controls muted>
-       <source src="/docs/assets/pool day.mp4" type="video/mp4"></video>
+      <div id="fishcat" class="image">
+       <model-viewer style="background-color: #ffd68a;" src="/docs/3dmodels/fishcat2.glb"  ar ar-modes="webxr scene-viewer quick-look" camera-controls interaction-prompt="none" shadow-intensity="0" autoplay auto-rotate min-camera-orbit="auto auto 13.86m" min-field-of-view="16.53deg" exposure="0.82" shadow-softness="0.8" tone-mapping="commerce">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+      </model-viewer>  
+      <script src="/docs/3dmodels/coffeegirlscript.js"></script>
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
       </div>
       <div class="text">
-        <p class="title">Pool Day</p>
-        <p class="subtitle">2022, hand drawn animation</p>
-        <p class="info">A day at the pool with an onion with arms and legs.</p>
+        <p class="title">Dollop</p>
+        <p class="subtitle">2023</p>
+        <p class="info">Dollop was created as part of a larger project that artist Loretto Crofton and I collaborated on. We made a video in the style of a pet simulation game, starring the main virtual pet, Dollop!</p>
       </div>
     </div>
-     
- <hr id="rs" class="line">
+    <div style="padding-top: 10px;" class="container">
+      <div class="image">
+        <video width="544px" height="306px" controls>
+        <source src="/docs/assets/V.PET.mp4" type="video/mp4"></video>
+        <p style="font-style: italic;" class="subtitle">A snippet of the final video, made in After Effects.</p>
+      </div>
+      <div class="text">
+        <img src="/docs/assets/mascot.png" style="max-height:306px;">
+        <p style="font-style: italic;" class="subtitle"> Dollop's concept art</p>
+      </div>
+    </div>
+
+    <hr class="line">
  
-     <div class="container">
-      <div class="image">
-        <img src="/docs/assets/rotation.gif">
-      </div>
-      <div class="text">
-        <p class="title">Rotation Station</p>
-        <p class="subtitle">2022, hand drawn animation</p>
-        <p class="info">A spinning cake.</p>
-      </div>
+    <div class="container">
+     <div id="christmas" class="image">
+       <model-viewer style="background-color: #993939;" src="/docs/3dmodels/christmas.glb" ar ar-modes="webxr scene-viewer quick-look" autoplay auto-rotate interaction-prompt="none" camera-controls shadow-intensity="1" tone-mapping="commerce" exposure="0.93" shadow-softness="0.26" environment-image="/docs/3dmodels/music_hall_01_1k.hdr" camera-orbit="0deg 75deg 22.45m" field-of-view="21.31deg">
+         <div class="progress-bar hide" slot="progress-bar">
+             <div class="update-bar"></div>
+         </div>
+       </model-viewer>  
+       <script src="/docs/3dmodels/coffeegirlscript.js"></script>
+       <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+     </div>
+     <div class="text">
+       <p style="font-size: 25px;" class="title">Various Christmas-themed Assets</p>
+       <p class="subtitle">2023</p>
+       <p class="info">A collection of 3D models made for a Christmas-themed collaborative class game. My group's scene features a family of gingerbread cookies making a Christmas dinner together.</p>
+       <p class="subtitle">Link to the game coming soon!</p>
+     </div>
+   </div>
+   
+   <hr class="line">
+ 
+   <div class="container">
+    <div id="dinermodel" class="image">
+      <model-viewer style="background-color: #ef7e7e;" src="/docs/3dmodels/diner.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate autoplay interaction-prompt="none" shadow-intensity="0.55" tone-mapping="commerce" shadow-softness="0.33" exposure="1.1" camera-orbit="29.93deg 56.7deg 31.96m" field-of-view="20.43deg" environment-image="/docs/3dmodels/music_hall_01_1k.hdr">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+      </model-viewer>  
+      <script src="/docs/3dmodels/coffeegirlscript.js"></script>
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     </div>
-     
- <hr id="ww" class="line">
-  
-     <div class="container">
-      <div class="image">
-        <img src="/docs/assets/worm walk.gif" width="100%">
-      </div>
-      <div class="text">
-        <p class="title">Worm Walk</p>
-        <p class="subtitle">2022, hand drawn animation</p>
-        <p class="info">How a worm would walk (if it had legs).</p>
-      </div>
+    <div class="text">
+      <p style="font-size: 25px;" class="title">Various Diner Assets</p>
+      <p class="subtitle">2023</p>
+      <p class="info">Assets made for my <a class="gamelink" href="/gameworks#diner" target="_blank">Diner</a> minigame, where customers are desperate for diner food at midnight.</p>
+      <a class="gamelink" href="https://lchan.itch.io/diner" target="_blank">Play the game here!</a>
     </div>
-     
- <hr id="ow" class="line">
-  
-     <div class="container">
-      <div class="image">
-        <img src="/docs/assets/onion walk.gif" width="100%">
-      </div>
-      <div class="text">
-        <p class="title">Onion Walk</p>
-        <p class="subtitle">2022, hand drawn animation</p>
-        <p class="info">Onions can walk too.</p>
-      </div>
+  </div>
+
+  <div style="padding-top: 10px;" class="container">
+    <div class="image">
+      <model-viewer style="background-color: #ef7e7e;" src="/docs/3dmodels/dinerfood.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate autoplay interaction-prompt="none" shadow-intensity="0.55" tone-mapping="commerce" shadow-softness="0.33" exposure="1.1" camera-orbit="7.271deg 44.3deg 8.885m" field-of-view="24.24deg" environment-image="/docs/3dmodels/music_hall_01_1k.hdr">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+      </model-viewer>  
+      <script src="/docs/3dmodels/coffeegirlscript.js"></script>
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     </div>
+    <div class="text">
+      <img src="/docs/assets/foodpics3.png" style="max-height:306px;">
+    </div>
+  </div>
+ 
  <hr  class="line">
 </body>
 </html>
